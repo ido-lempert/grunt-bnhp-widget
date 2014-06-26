@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:g="http://www.backbase.com/2008/gadget">
+<head>
+    <title>Osh</title>
+    <link rel="stylesheet" href="../../../common/calendar.css"/>
+    
+    
+
+    <g:preferences>
+        <g:prefernence name="country" label="Country" type="text" default="Israel" viewHint="user,text-input"/>
+        <g:prefernence name="city" label="City" type="text" default="Tel Aviv" viewHint="user,text-input"/>
+        <g:prefernence name="zipcode" label="Zipcode" type="text" default="55570" viewHint="user,text-input"/>
+        <g:prefernence name="isvisible" label="Is Visible" type="checkbox" viewHint="user,text-input"/>
+    </g:preferences>
+<link rel="stylesheet" href="main.min.css"/>
+<script type="text/javascript" src="main.min.js"></script>
+</head>
+<body g:onload="bnhpWidget.load(__WIDGET__, ['country', 'city', 'zipcode', 'isvisible'])">
+    <osh class="invisible"></osh>
+    
+    
+    <script>
+        alert(1);
+    </script>
+    <script src="../../../common/calendar.js"></script>
+</body>
+</html>
